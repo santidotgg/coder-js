@@ -1,0 +1,3 @@
+El proyecto se trata sobre calcular impuestos en una compra
+en moneda extrangera. Tambien se podria obtener el valor de 
+distintas divisas y cryptos.

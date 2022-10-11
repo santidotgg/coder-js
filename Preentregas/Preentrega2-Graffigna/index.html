@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous" defer></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Impuestos :(</title>
+</head>
+<body>
+    <!-- <div class="size m-auto">
+        <div class="text-center">
+            <h2 class="">Calcular Impuestos 😟</h2>
+        </div>
+        <div class="form-floating w-25 m-auto">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Enter amount</label>
+          </div>
+    </div> -->
+
+    <!-- <div class="container contact-form bradius">
+        <div class="contact-image">
+            <img class="rotate" src="https://cdn-icons-png.flaticon.com/512/3342/3342741.png" alt="money"/>
+        </div>
+        <form method="post">
+            <h3>Converter</h3>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+            </div>
+        </form>
+</div> -->
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white bradius">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Converter</h2>
+                <p class="text-white-50 mb-5">Please enter the amount you want to convert</p>
+  
+                <div class="form-outline form-white mb-4">
+                  <input type="number" class="form-control form-control-lg text-center" placeholder="Enter amount">
+                  <!-- <label class="form-label p-1" for="typeEmailX">From </label>
+                    <button class="btn btn-outline-secondary dropdown-toggle pb-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">Currency</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">🇺🇸 USD</a></li>
+                      <li><a class="dropdown-item" href="#">🇪🇺 EUR</a></li>
+                      <li><a class="dropdown-item" href="#">🇬🇧 GBP</a></li>
+                      <li><a class="dropdown-item" href="#">🇦🇷 ARS</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">BTC</a></li>
+                    </ul> -->
+                    <select class="form-select bg-dark text-white sizeCurrency m-auto text-center" aria-label="Default select example">
+                      <option selected>From Currency</option>
+                      <option value="1">🇺🇸 USD</option>
+                      <option value="2">🇪🇺 EUR</option>
+                      <option value="3">🇬🇧 GBP</option>
+                      <option value="4">🇦🇷 ARS</option>
+                      <option value="5">BTC</option>
+                    </select>
+                </div>
+  
+                <div class="form-outline form-white mb-4">
+                  <input type="number" class="form-control form-control-lg text-center" placeholder="">
+                  <!-- <label class="form-label py-1">To</label>
+                  <button class="btn btn-outline-secondary dropdown-toggle pb-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">Currency</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">🇺🇸 USD</a></li>
+                      <li><a class="dropdown-item" href="#">🇪🇺 EUR</a></li>
+                      <li><a class="dropdown-item" href="#">🇬🇧 GBP</a></li>
+                      <li><a class="dropdown-item" href="#">🇦🇷 ARS</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">BTC</a></li>
+                    </ul> -->
+                    <select class="form-select bg-dark text-white sizeCurrency m-auto text-center" aria-label="Default select example">
+                      <option selected>To Currency</option>
+                      <option value="1">🇺🇸 USD</option>
+                      <option value="2">🇪🇺 EUR</option>
+                      <option value="3">🇬🇧 GBP</option>
+                      <option value="4">🇦🇷 ARS</option>
+                      <option value="5">BTC</option>
+                    </select>
+                </div>
+  
+  
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Convert</button>
+  
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

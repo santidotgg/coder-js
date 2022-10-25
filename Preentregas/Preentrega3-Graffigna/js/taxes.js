@@ -13,8 +13,8 @@ amount.addEventListener("keyup", e => {
 
 
 const getPrice = () => {
-    const exchangePrice = document.querySelector("form .exchange-price");
+    const taxedPrice = document.querySelector("form .exchange-price");
     let amountVal = amount.value;
     const display = `$ ${Math.round(((amountVal * 1.75) + Number.EPSILON) * 100) / 100}`;
-    exchangePrice.innerText = display;
+    taxedPrice.innerText = display;
 }
